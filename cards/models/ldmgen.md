@@ -12,9 +12,8 @@ description: >-
   for analysis, adapters and compare; public interchange is HepMC3 plus a thin
   LdmHepMC attribute profile; experiment entry points (HEPEVT/TextFileGen,
   edep-sim, Mu2e GenParticle) are sinks only. Not merged into nova-fastsim or
-  mu2e-fastsim. Working code lives in the local ldm-generators workspace;
-  public package publication is still open. No secrets or private site paths in
-  this card.
+  mu2e-fastsim. Public Apache-2.0 package at github.com/RobMina/ldmgen. Private
+  NOvA geometry and site trees stay outside this package. No secrets in this card.
 
 science:
   - particle-physics
@@ -39,9 +38,9 @@ developed_by:
 version: '0.1.0'
 last_updated: '2026-11-20'
 license:
-  spdx_id: NOASSERTION
-  name: License to be declared on public release
-  url: ''
+  spdx_id: Apache-2.0
+  name: Apache License 2.0
+  url: https://github.com/RobMina/ldmgen
 relationships:
   - type: compatible_with
     target: nova-fastsim
@@ -72,7 +71,7 @@ extension:
   architecture: >-
     Common Python interface over multiple LDM generators; ldmgen/1 HDF5 analysis
     record; HepMC3/LdmHepMC public export; experiment-specific sink exporters
-  framework: Python (NumPy/HDF5); HepMC3 for public interchange
+  framework: Python (NumPy/HDF5); HepMC3 Asciiv3 for public interchange
   base_model: ''
   training_datasets: []
   metrics: []
@@ -81,9 +80,9 @@ extension:
 # ldmgen (shared LDM event record)
 
 Experiment-neutral generator interface and event-record layer for light dark
-matter studies across NOvA, DUNE and (later) Mu2e. **Working tree is local**;
-public GitHub publication timing is still open — this card describes the locked
-architecture, not a released package URL.
+matter studies across NOvA, DUNE and (later) Mu2e.
+
+**Public package:** [RobMina/ldmgen](https://github.com/RobMina/ldmgen) (Apache-2.0).
 
 ## Layers (agreed 2026-11-20)
 
@@ -97,16 +96,18 @@ architecture, not a released package URL.
 ## What it does
 
 - Per-generator adapters and side-by-side compare.
-- Exporters into NOvA (`bdnmc-nova` / TextFileGen) and DUNE (`bdnmc-dune` / edep-sim) chains.
-- Planned HepMC3 export with LdmHepMC attributes (model point, POT, sample tags, provenance).
+- `to-hepmc3` / `to-hepevt` public sinks (no private geometry).
+- Optional exporters into NOvA (`bdnmc-nova` / TextFileGen) and DUNE (`bdnmc-dune` / edep-sim) chains.
 
 ## What it does not do
 
 - Detector fast simulation (see `nova-fastsim`, Mu2e fastsim cards).
 - Optical library generation (see `scint-fibre-fastsim`).
 - Site job submission (see `hep-endpoints`).
+- Ship NOvA surveyed geometry or private frame JSON.
 
 ## Limitations and risks
 
-- Not yet a public repository; licence SPDX will be set on release.
-- Private NOvA/DUNE geometry and FCL stay outside this package.
+- Chain exporters need optional deps and site-provided frame configs.
+- LdmHepMC attribute list is v0 (freeze later).
+- Mu2e GenParticle sink not yet implemented.
