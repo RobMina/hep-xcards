@@ -4,19 +4,19 @@ xCard:
   version: '0.1'
 
 id: nova-fastsim
-name: nova-fastsim (planned NOvA ND JAX fast simulation)
+name: nova-fastsim (NOvA ND JAX fast simulation)
 description: >-
-  Planned NOvA Near Detector experiment package parallel to mu2e-fastsim: JAX
-  host profiles, ND response and calibration, LDM orchestration examples, and
-  site configuration. Depends on shared HEP libraries (hep-simlib, hep-simbench,
-  hep-endpoints, cryjax, scint-fibre-fastsim when available) and on separate
-  generators (BdNMC, ldmgen, bdnmc-nova); does not merge generators into this
-  package. Private geometry and FCL live in a planned nova-fastsim-inputs
-  companion. Event interchange follows the shared LDM record (ldmgen/1 HDF5 for
-  analysis; HepMC3 plus LdmHepMC for public; HEPEVT/TextFileGen as sinks).
-  Float32 and float64 on every public path. Public repo name locked as
-  RobMina/nova-fastsim; do not create on GitHub until the owner says go. Not yet
-  published.
+  NOvA Near Detector experiment package parallel to mu2e-fastsim: JAX host
+  profiles, ND response and calibration, LDM orchestration examples, and site
+  configuration. Depends on shared HEP libraries (hep-simlib, hep-simbench,
+  hep-endpoints, cryjax, scint-fibre-fastsim) and on separate generators (BdNMC,
+  ldmgen, bdnmc-nova); does not merge generators into this package. Private
+  geometry and FCL live in a companion nova-fastsim-inputs bundle (follow-up).
+  Event interchange follows the shared LDM record (ldmgen/1 HDF5 for analysis;
+  HepMC3 plus LdmHepMC for public; HEPEVT/TextFileGen as sinks). Float32 and
+  float64 on every public path. Public Apache-2.0 package at
+  github.com/RobMina/nova-fastsim (scaffold: core profile present; calib/ldm/
+  beamline stubs; on-device ND response later).
 
 science:
   - particle-physics
@@ -37,12 +37,12 @@ keywords:
 sensitivity: general
 developed_by:
   - HEP Genesis tooling
-version: '0.1.0'
+version: '0.2.0'
 last_updated: '2026-11-20'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
-  url: ''
+  url: https://github.com/RobMina/nova-fastsim
 relationships:
   - type: requires
     target: hep-simlib
@@ -58,7 +58,7 @@ relationships:
     target_label: cryjax cosmic sampler
   - type: compatible_with
     target: scint-fibre-fastsim
-    target_label: Planned fibre optical tables
+    target_label: scint-fibre-fastsim fibre optical tables
   - type: compatible_with
     target: ldmgen
     target_label: ldmgen shared event record and exporters
@@ -96,18 +96,17 @@ extension:
   metrics: []
 ---
 
-# nova-fastsim (planned)
+# nova-fastsim
 
-NOvA ND JAX fast-simulation experiment package planned as `RobMina/nova-fastsim`
-(Apache-2.0). **Do not create the GitHub repository until the owner says go.**
-This card describes the locked plan so Discovery search can find the design.
+NOvA ND JAX fast-simulation experiment package.
+Code: [RobMina/nova-fastsim](https://github.com/RobMina/nova-fastsim) (Apache-2.0).
 
 ## Architecture (who owns what)
 
 ```text
-nova-fastsim (planned)  │  mu2e-fastsim  │  bdnmc-dune
+nova-fastsim              │  mu2e-fastsim  │  bdnmc-dune
   profiles, ND response, examples, site.env
-  private: nova-fastsim-inputs
+  private: nova-fastsim-inputs (follow-up)
         │
 hep-simlib / hep-simbench / hep-endpoints / cryjax / scint-fibre-fastsim
         │
@@ -121,7 +120,8 @@ BdNMC + ldmgen + bdnmc-nova  (not merged into this package)
 - TextFileGen remains stock NOvASoft (orchestrate; do not rewrite).
 - Shared event record: see the `ldmgen` card.
 
-## Limitations
+## Status
 
-- Not published yet; no public URL until the repo is created.
-- Private GDML/FCL never belong in the public tree.
+Scaffold: `core/` profile + dtype present; `calib/`, `ldm/`, `beamline/` stubs; examples point at the existing
+bdnmc-nova / UVA two-stage chain; container def is a stub. On-device ND response is a later phase. Private GDML/FCL
+never belong in the public tree.

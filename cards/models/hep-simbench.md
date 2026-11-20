@@ -64,7 +64,7 @@ relationships:
     target_label: Mu2e Genesis AI benchmark suite (uses this scorer)
   - type: compatible_with
     target: nova-fastsim
-    target_label: Planned NOvA ND fast simulation
+    target_label: NOvA ND fast simulation
 
 io_contract:
   input_modes:

@@ -45,7 +45,7 @@ license:
 relationships:
   - type: compatible_with
     target: nova-fastsim
-    target_label: Planned NOvA ND fast simulation (consumer)
+    target_label: NOvA ND fast simulation (consumer)
   - type: compatible_with
     target: hep-simlib
     target_label: hep-simlib (orthogonal library contract)

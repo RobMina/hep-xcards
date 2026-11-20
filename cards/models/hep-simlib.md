@@ -61,10 +61,10 @@ relationships:
     target_label: Mu2e tracker fast simulation
   - type: compatible_with
     target: nova-fastsim
-    target_label: Planned NOvA ND fast simulation (nova profile)
+    target_label: NOvA ND fast simulation (nova profile)
   - type: compatible_with
     target: scint-fibre-fastsim
-    target_label: Planned scintillator-fibre optical tables
+    target_label: scint-fibre-fastsim optical tables
 
 io_contract:
   input_modes:

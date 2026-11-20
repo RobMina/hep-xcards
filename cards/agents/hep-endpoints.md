@@ -52,7 +52,7 @@ relationships:
     target_label: Mu2eBO (fastsimkit endpoint adapters)
   - type: compatible_with
     target: nova-fastsim
-    target_label: Planned NOvA ND fast simulation
+    target_label: NOvA ND fast simulation
   - type: runs_on
     target: mu2e-uva-hpc
     target_label: UVA Rivanna/Afton (slurm_ssh example)

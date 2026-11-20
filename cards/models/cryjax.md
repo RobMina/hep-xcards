@@ -53,7 +53,7 @@ relationships:
     target_label: Mu2e tracker fast simulation
   - type: compatible_with
     target: nova-fastsim
-    target_label: Planned NOvA ND fast simulation (cosmic path)
+    target_label: NOvA ND fast simulation (cosmic path)
 
 io_contract:
   input_modes:
