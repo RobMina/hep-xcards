@@ -64,8 +64,8 @@ scripts/registry.sh ids
 ```
 
 Workflow cards have no registry subtype; `registry.sh push` writes them into the local engine container storage.
-See [Publishing to the Genesis Discovery Engine](#publishing-to-the-genesis-discovery-engine) below and the
-private workspace wiki page `<private-mu2e-wiki>/genesis/xcards-discovery-publish`.
+See [Publishing to the Genesis Discovery Engine](#publishing-to-the-genesis-discovery-engine) below.
+Detailed publish steps for maintainers live in the private Mu2e workspace wiki (Genesis / xcards publish page).
 
 ## Publishing to the Genesis Discovery Engine
 
