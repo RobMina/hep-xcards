@@ -1,0 +1,3 @@
+[submodule "mu2e-xcards"]
+	path = mu2e-xcards
+	url = https://github.com/RobMina/mu2e-xcards.git

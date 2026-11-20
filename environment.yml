@@ -1,0 +1,7 @@
+# Minimal environment for scripts/validate.py
+name: hep-xcards
+channels: [conda-forge]
+dependencies:
+  - python>=3.10
+  - pyyaml
+  - jsonschema>=4.18
