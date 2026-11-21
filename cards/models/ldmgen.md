@@ -36,7 +36,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '0.1.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -81,6 +81,9 @@ extension:
 
 Experiment-neutral generator interface and event-record layer for light dark
 matter studies across NOvA, DUNE and (later) Mu2e.
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418808](https://doi.org/10.5281/zenodo.24418808) (every version);
+v0.1.1 is [10.5281/zenodo.24418809](https://doi.org/10.5281/zenodo.24418809).
 
 **Public package:** [RobMina/ldmgen](https://github.com/RobMina/ldmgen) (Apache-2.0).
 

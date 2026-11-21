@@ -41,7 +41,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '1.0.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -97,6 +97,9 @@ extension:
 
 Public, experiment-agnostic package for fast-versus-stock scoring.
 Code: [RobMina/hep-simbench](https://github.com/RobMina/hep-simbench) (Apache-2.0).
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418711](https://doi.org/10.5281/zenodo.24418711) (every version);
+v0.1.0 is [10.5281/zenodo.24418712](https://doi.org/10.5281/zenodo.24418712).
 
 ## What it does
 
