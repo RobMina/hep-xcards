@@ -41,7 +41,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '1.0.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -100,6 +100,9 @@ extension:
 
 Public, experiment-agnostic package for HEP fast-simulation libraries.
 Code: [RobMina/hep-simlib](https://github.com/RobMina/hep-simlib) (Apache-2.0).
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418708](https://doi.org/10.5281/zenodo.24418708) (every version);
+v0.1.0 is [10.5281/zenodo.24418709](https://doi.org/10.5281/zenodo.24418709).
 
 ## What it does
 

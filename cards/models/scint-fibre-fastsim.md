@@ -39,7 +39,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '0.2.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -89,6 +89,9 @@ extension:
 
 Public experiment-agnostic scintillator + WLS-fibre optical package.
 Code: [RobMina/scint-fibre-fastsim](https://github.com/RobMina/scint-fibre-fastsim) (Apache-2.0).
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418804](https://doi.org/10.5281/zenodo.24418804) (every version);
+v0.1.6 is [10.5281/zenodo.24418805](https://doi.org/10.5281/zenodo.24418805).
 
 ## What it owns
 

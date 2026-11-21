@@ -38,7 +38,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '1.0.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -98,6 +98,9 @@ extension:
 
 Public, experiment-agnostic package for HEP batch adapters.
 Code: [RobMina/hep-endpoints](https://github.com/RobMina/hep-endpoints) (Apache-2.0).
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418701](https://doi.org/10.5281/zenodo.24418701) (every version);
+v0.1.0 is [10.5281/zenodo.24418702](https://doi.org/10.5281/zenodo.24418702).
 
 ## What it does
 

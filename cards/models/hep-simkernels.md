@@ -47,7 +47,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '1.0.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -104,6 +104,9 @@ extension:
 Public, experiment-agnostic kernels for fast simulations that need Geant4's charged-particle physics without running
 Geant4. Code: [RobMina/hep-simkernels](https://github.com/RobMina/hep-simkernels) (Apache-2.0; bundled Geant4 data
 under the Geant4 Software License, see NOTICE).
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418806](https://doi.org/10.5281/zenodo.24418806) (every version);
+v0.1.0 is [10.5281/zenodo.24418807](https://doi.org/10.5281/zenodo.24418807).
 
 ## What it does
 

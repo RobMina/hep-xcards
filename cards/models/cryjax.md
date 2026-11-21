@@ -39,7 +39,7 @@ sensitivity: general
 developed_by:
   - HEP Genesis tooling
 version: '1.0.0'
-last_updated: '2026-11-20'
+last_updated: '2026-11-21'
 license:
   spdx_id: Apache-2.0
   name: Apache License 2.0
@@ -88,6 +88,9 @@ extension:
 Public, experiment-agnostic package for HEP fast simulation. Code:
 [RobMina/cryjax](https://github.com/RobMina/cryjax). Apache-2.0 for the package; CRY's BSD-style licence and
 DOE notice apply to CRY and to the parts that reproduce it. cryjax is not produced or endorsed by LLNL.
+
+Archived on Zenodo: concept DOI [10.5281/zenodo.24418660](https://doi.org/10.5281/zenodo.24418660) (every version);
+v0.1.1 is [10.5281/zenodo.24418661](https://doi.org/10.5281/zenodo.24418661).
 
 ## What it does
 
