@@ -12,7 +12,7 @@ registering a card copies it into a registry, which assigns its own id.
 | Path | Contents |
 |---|---|
 | `cards/agents/` | Experiment-neutral agents / libraries that act (`hep-endpoints`, …) |
-| `cards/models/` | Shared models and packages (`cryjax`, `hep-simlib`, `hep-simbench`, `nova-fastsim`, `scint-fibre-fastsim`, …) |
+| `cards/models/` | Shared models and packages (`cryjax`, `hep-simlib`, `hep-simbench`, `hep-simkernels`, `nova-fastsim`, `scint-fibre-fastsim`, …) |
 | `cards/datasets/` | Shared datasets (none yet; collaboration data policy applies) |
 | `cards/infrastructure/` | Shared facilities (prefer experiment cards when the use is experiment-specific) |
 | `cards/workflows/` | Cross-experiment workflows |
@@ -84,7 +84,7 @@ Short path (detail in the wiki):
 
 | Put it here (hep-xcards) | Put it in mu2e-xcards |
 |---|---|
-| cryjax, hep-simlib, hep-simbench, hep-endpoints | Mu2e MCP servers, Mu2eBO, CRV/tracker/beam fastsim |
+| cryjax, hep-simlib, hep-simbench, hep-simkernels, hep-endpoints | Mu2e MCP servers, Mu2eBO, CRV/tracker/beam fastsim |
 | Shared packages (scint-fibre-fastsim, nova-fastsim, ldmgen, …) | Mu2e facilities, Mu2e workflows |
 | Cross-experiment model cards | Mu2e-only datasets when policy allows |
 
